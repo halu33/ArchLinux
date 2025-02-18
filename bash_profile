@@ -1,0 +1,1 @@
+/home/haru/.bash_profile
