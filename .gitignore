@@ -1,12 +1,35 @@
-# キャッシュやログを除外
-.cache/
+# 機密ファイルや個人情報
+*.key
+*.pem
+*.crt
+*.env
+*.gpg
+*.asc
+*.p12
+*.jks
+.ssh/
+.gnupg/
+
+# 不要なファイル
 *.log
 *.swp
 *.tmp
+*.bak
 
-# ビルドファイルを除外
-dist/
+# ビルド系
 build/
+dist/
 
-# 環境ファイルを除外
-.env
+# エディタ・IDE関連
+.vscode/launch.json
+
+# シンボリックリンク除外
+bashrc
+bash_profile
+xinitrc
+profile
+vimrc
+hypr
+waybar
+dunst
+fcitx5
