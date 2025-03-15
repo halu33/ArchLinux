@@ -2,17 +2,16 @@
 set -e
 echo "[Syncing started]"
 
-# 単体ファイルをコピー
-cp -f ~/.bashrc ~/settings/.bashrc
-cp -f ~/.bash_profile ~/settings/.bash_profile
-cp -f ~/.profile ~/settings/.profile
-cp -f ~/.xinitrc ~/settings/.xinitrc
-cp -f ~/.vimrc ~/settings/.vimrc
+# 単体ファイル
+cp -f ~/.bashrc ~/.bash_profile ~/.profile ~/.xinitrc ~/.vimrc ~/settings/
 
-# ディレクトリをrsyncで同期
+# Hyprland ディレクトリ同期
 rsync -a --delete ~/.config/hypr/ ~/settings/hypr/
+
+# Waybar ディレクトリ同期
 rsync -a --delete ~/.config/waybar/ ~/settings/waybar/
+
+# Dunst ディレクトリ同期
 rsync -a --delete ~/.config/dunst/ ~/settings/dunst/
-rsync -a --delete ~/.config/fcitx5/ ~/settings/fcitx5/
 
 echo "[Syncing complete]"

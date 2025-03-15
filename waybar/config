@@ -1,0 +1,47 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "height": 60,
+    "modules-left": ["hyprland/workspaces","custom/hostname",  "tray"],
+    "modules-center": ["clock"],
+    "modules-right": ["cpu", "memory", "battery", "network", "pulseaudio"],
+
+    "custom/hostname":{
+	"format":"halu33@HALU_33",
+	"tooltip":false
+    },
+
+    "clock": {
+        "format": "{:%Y-%m-%d %H:%M}",
+        "tooltip": false
+    },
+
+    "cpu": {
+        "format": "CPU: {usage}%",
+        "tooltip": false
+    },
+
+    "memory": {
+        "format": "Memory: {used:0.1f}GB / {total:0.1f}GB",
+        "tooltip": false
+    },
+
+    "battery": {
+        "format": "Battery: {capacity}%",
+        "format-icons": ["empty", "low", "medium", "high", "full"]
+    },
+
+    "network": {
+        "format-wifi": "Wi-Fi: {essid} ({signalStrength}%)",
+        "format-ethernet": "Ethernet: {ipaddr}",
+        "tooltip": false
+    },
+
+    "pulseaudio": {
+	"format": "Volume: {volume}%",
+    	"format-muted": "Volume: muted",
+    	"tooltip": false,
+    	"on-click": "pavucontrol"
+    }
+}
+

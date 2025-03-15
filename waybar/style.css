@@ -1,0 +1,40 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 24px;
+    color: white;
+}
+
+#waybar {
+    background: rgba(30, 30, 30, 0.9);
+    border-top: 2px solid white;
+    min-height: 60px;
+    padding: 0 16px;
+}
+
+#clock {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#cpu, #memory, #battery, #network, #pulseaudio, #tray {
+    font-size: 24px;
+    margin: 0 14px;
+}
+
+#custom-hostname {
+    font-size: 24px;
+    margin: 0 20px;
+    color: #00ff5f;
+}
+
+#tray {
+    padding-right: 16px;
+    margin-left: 12px;
+}
+
+#tray > * {
+    min-height: 32px;
+    min-width: 32px;
+}
+
+

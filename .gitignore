@@ -1,4 +1,14 @@
-# 機密ファイルや個人情報
+# シンボリックリンク
+links/
+
+# ログ・キャッシュ・一時ファイル
+*.log
+*.swp
+*.tmp
+*.bak
+.cache/
+
+# 機密ファイル・認証関連
 *.key
 *.pem
 *.crt
@@ -10,26 +20,7 @@
 .ssh/
 .gnupg/
 
-# 不要なファイル
-*.log
-*.swp
-*.tmp
-*.bak
-
-# ビルド系
+# ビルド・開発関連
 build/
 dist/
-
-# エディタ・IDE関連
 .vscode/launch.json
-
-# シンボリックリンク除外
-bashrc
-bash_profile
-xinitrc
-profile
-vimrc
-hypr
-waybar
-dunst
-fcitx5
